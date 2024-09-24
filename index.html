@@ -1,0 +1,156 @@
+<html lang="en">
+<!-- Matrix v2.04 -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <script src="https://kit.fontawesome.com/cd2bae0774.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="myScripts.js"></script>
+    <title>JavaScript ES5</title>
+</head>
+
+<body>
+    <div style="width: 100%; height: 100% !important; display: grid; ">
+        <header>
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a href=""><i class="material-symbols-outlined">home</i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="material-symbols-outlined">storefront</i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="material-symbols-outlined">info</i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="material-symbols-outlined">person</i></a>
+                    </li>
+                    <li class="drop-down-menu">
+                        <a href="" class="drop-down-btn"><span
+                                class="material-symbols-outlined">settings_applications</span></a>
+                        <div class="drop-down">
+                            <a href="">Shit</a>
+                            <a href="">Shit</a>
+                            <a href="">Shit</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="search-box">
+                <form action="#">
+                    <input id="search-input" type="search" name="" placeholder="Search here...">
+                    <button type="submit">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </form>
+            </div>
+        </header>
+        <h2 id="content-title">ECMAScript 2009</h2>
+        <div id="content-div">
+            <div class="full-col-div div-hover">
+                <h2 class="div-header">empty for now</h2>
+                <!-- <h3 class="div-header">Property Access on Strings</h3>
+                <p class="div-content-p">The charAt() method returns the character at a specified index (position) in a
+                    string</p>
+                <h4 class="div-header">Example</h4>
+                <pre class="code-holder">
+                    <code class="example-code">
+                    var str = "HELLO WORLD";
+                    str.charAt(0);            // returns H
+                    </code>
+                </pre> -->
+            </div>
+            <div class="left-col-div div-hover">
+                <h2 class="div-header">
+                    Input
+                </h2>
+                <p class="div-content-p"></p>
+                <!-- <label for="ipt-str">Enter a string</label><br>
+                <input type="text" id="ipt-str" name="ipt-str" value=""><br>
+
+                <label for="CharAt-Number">What character you want to cut?</label><br>
+                <input type="text" id="CharAt-Number" name="CharAt-Number" value=""><br>
+
+                <input type="submit" onclick="getStr()" value="Put my string into output"><br>
+                <input type="submit" onclick="cutStrToChar()" value="Cut the char number from my input"><br>
+
+                <label for="text-area-input">Write it here:</label><br>
+                <textarea name="text-area-input" id="text-area-input" rows="8" cols="35"></textarea><br>
+                <input type="submit" onclick="trmStr()" value="Remove whitespace from end and start my input"><br>
+
+                <label for="Array-input">insert the value to push it inside a array:</label><br>
+                <input type="text" id="Array-input" name="Array-input" value=""><br>
+                <input type="submit" onclick="getArray()" value="push to array"><br>
+
+                <label for="Delete-Array-Input">insert the number of what you want to delete</label><br>
+                <input type="text" id="Delete-Array-Input" name="Delete-Array-Input" value=""><br>
+                <input type="submit" onclick="delArrayItem()" value="insert">
+                <input type="submit" onclick="showFabric()" value="show fabric array">
+                <input type="submit" onclick="mapTheArray()" value="map the array">
+                <br>
+                <label for="Start-Number">insert the start number</label><br>
+                <input type="text" id="Start-Number" name="Start-Number" value=""><br>
+                <label for="End-Number">insert the end number</label><br>
+                <input type="text" id="End-Number" name="End-Number" value=""><br>
+                <input type="submit" onclick="cutArray()" value="Cut"><br>
+                <input type="submit" onclick="reduceTotal()" value="get beggest value (log)">
+                <input type="submit" onclick="setDefaultArray()" value="set a default array"><br>
+                <label for="More-Than">gas the lenght of the list</label><br>
+                <input type="text" id="More-Than" name="More-Than" value=""><br>
+                <input type="submit" onclick="callEvery()" value="gass"><br> -->
+                <p>Create object</p>
+                <label for="Object-Name-Input">insert a neme for your value: </label><br>
+                <input type="text" id="Object-Name-Input" name="Object-Name-Input" value=""><br>
+                <label for="Object-Value-Input">insert the value of name: </label><br>
+                <input type="text" name="Object-Value-Input" id="Object-Value-Input" value=""><br>
+                <input type="submit" onclick="createObject()" value="create and show">
+            </div>
+            <div class="right-col-div div-hover">
+                <h2 class="div-header">
+                    Output
+                </h2>
+                <!-- <p id="Output-1">your text input should show's here...</p>
+                <hr>
+                <p id="Output-2">your character cutted should show's hete...</p>
+                <hr>
+                <p id="Output-3">your removed space input should show's here...</p>
+                <hr>
+                <ol id="Array-Output">
+                    <li>no array item inserted...</li>
+                </ol>
+                <hr>
+                <ul id="Fabric-Array">
+                    <li>your fabric array shoud show here...</li>
+                </ul> -->
+                <ul id="Object-Output">
+                    <li>No object...</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="left-col-div div-hover">
+                <h2>
+                    Social Media
+                </h2>
+            </div>
+            <div class="right-col-div div-hover">
+                <h2>
+                    Co Name & CopyRight
+                </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit sequi odit ipsa voluptas! Quas
+                    beatae natus, voluptatem magnam facere cupiditate odit laborum molestiae obcaecati error minus,
+                    blanditiis nulla corporis reiciendis.</p>
+            </div>
+        </footer>
+</body>
+
+</html>
